@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="font-awesome.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Portfolio</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("h6H2mJlfKxfG05Ofc");
+   })();
+  </script>
+  </head>
+  <body>
+    <!-- Page Loader Start -->
+    <div class="page-loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <!-- Page Loader End -->
+
+    <!-- background circles start -->
+    <div class="bg-circles">
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="circle-4"></div>
+    </div>
+    <!-- background circles end -->
+
+    <!-- Overlay Start -->
+    <div class="overlay"></div>
+    <!-- Overlay End -->
+
+    <!-- Main Start -->
+    <div class="main hidden">
+      <!-- Header Start -->
+      <header class="header">
+        <div class="container">
+          <div class="row flex-end">
+            <button class="nav-toggler">
+              <span></span>
+            </button>
+            <nav class="nav">
+              <nav class="nav-inner">
+                <ul>
+                  <li><a href="#home" class="nav-item link-item">home</a></li>
+                  <li><a href="#about" class="nav-item link-item">about</a></li>
+                  <li>
+                    <a href="#portfolio" class="nav-item link-item"
+                      >portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#contact" class="nav-item link-item">contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- Header End -->
+
+      <!-- Home Section Start -->
+      <section class="home-section align-items active" id="home">
+        <div class="container">
+          <div class="row align-items">
+            <div class="home-text">
+              <p>Hello, I'm</p>
+              <h1>Mithun Verma</h1>
+              <h2>Full Stack Developer</h2>
+              <a href="#about" class="btn link-item">more about me</a>
+              <a href="#portfolio" class="btn link-item">portfolio</a>
+            </div>
+            <div class="home-img">
+              <div class="img-box">
+                <img src="assets/img/myimg.jpeg" alt="profile-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Home Section End -->
+
+      <!-- About Section Start -->
+      <section class="about-section sec-padding" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>about me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about-img">
+              <div class="img-box">
+                <img src="assets/img/myimg.jpeg" alt="about-me" />
+              </div>
+            </div>
+            <div class="about-text">
+              <p>
+                Hello, I'm Mithun Verma—a passionate coder and tech enthusiast. 
+                Currently pursuing B.Tech at IIIT Delhi, As a Full Stack Developer with a keen interest in web and Android development, I embrace innovation and enjoy exploring the ever-evolving landscape of technologies. 
+                Eager to collaborate, create, and make an impact in the coding realm. 
+                Let's build something extraordinary together! 🚀
+              </p>
+              <h3>skills</h3>
+              <div class="skills">
+                <div class="skill-item">Html</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">TailwindCSS</div>
+                <div class="skill-item">Javascript</div>
+                <div class="skill-item">ReactJS</div>
+                <div class="skill-item">Redux and Redux-toolkit</div>
+                <div class="skill-item">NodeJS</div>
+                <div class="skill-item">ExpressJS</div>
+                <div class="skill-item">MongoDB</div>
+                <div class="skill-item">Firebase</div>
+                <div class="skill-item">Android Studio</div>
+                <div class="skill-item">Python and R</div>
+                <div class="skill-item">Git & GitHub</div>
+              </div>
+              <div class="about-tabs">
+                <button class="tab-item active" data-target="#education">
+                  education
+                </button>
+
+                <button class="tab-item" data-target="#experience">
+                  experience
+                </button>
+              </div>
+
+              <!-- Education Start -->
+              <div class="tab-content active" id="education">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="date">2020 - 2024</span>
+                    <h4>
+                      bachelor of technology - <span></span>IIIT Delhi
+                    </h4>
+                    <p>A 4year Degree program in Computer Science Education</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="date">2019</span>
+                    <h4>
+                      Higher Secondary Education - <span></span>DR RPS School President Estate New Delhi
+                    </h4>
+                    <p>Completed Higher secondary Education from CBSE Board in Science stream i.e PCM</p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="date">2017</span>
+                    <h4>
+                      Secondary Education - <span></span>RSBV School Block Shakarpur Delhi 
+                    </h4>
+                    <p>Completed Secondary Education from CBSE Board</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Education End -->
+
+              <!-- Experience Start -->
+              <div class="tab-content" id="experience">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <span class="date">Jul,2023 - Present</span>
+                    <h4>Research Analyst @ Microbiome Informatics Lab, IIIT Delhi</h4>
+                    <p>
+                      Contributed to a research project forecasting microbial colonization in human gut and oral microbiomes. 
+                      Utilized advanced computational models and analyzed sequencing data to explore the interplay between diet, genetics, and environment. 
+                      The study aims to provide insights for personalized medicine and disease prevention strategies.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <span class="date">Sep,2022 - Apr, 2023</span>
+                    <h4>TBS Expert in Computer science @ Chegg, India</h4>
+                    <p>
+                      I am an accomplished Textbook Solution Expert specializing in Data Structures and Algorithms (DSA) within the field of Computer Science on Chegg India. 
+                      With a proven track record, I have successfully mentored over 10 students and provided comprehensive solutions to more than 100 problems. 
+                      My expertise lies in delivering clear and insightful explanations to help students grasp complex concepts and excel in their studies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Experience End -->
+
+              <a href="assets/Resume.pdf" target="_blank" class="btn"
+                >download cv</a
+              >
+              <a href="#contact" class="btn link-item">contact me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section End -->
+
+      <!-- Portfolio Section Start -->
+      <section class="portfolio-section sec-padding" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>Projects & Recent Work</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!-- Project - 1 -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="assets/img/blog_web.png" alt="project image" />
+              </div>
+              <h3 class="portfolio-item-title">Modern Full Stack Blog Website</h3>
+              <button type="button" class="btn view-project-btn">
+                view project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Dive into the future of blogging with our sleek, fully-functional website. 
+                    Post, remove, like, and comment on blogs effortlessly. 
+                    Your personalized dashboard provides analytics on user engagement. 
+                    Built with the dynamic MERN stack, it ensures a responsive interface, while Redux streamlines state management. 
+                    Powered by Node.js, Express, and MongoDB for efficiency and scalability. 
+                    Unleash your creativity in a tech-savvy, user-friendly space—where every post is a story waiting to be celebrated.
+                    Welcome to the next level of blogging.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>technologies used - <span>Html-CSS, TailwindCSS, Javascript , ReactJS , Redux and Redux-Toolkit, NodeJS, MongoDB, ExpressJS, Firebase </span></li>
+                    <li>Role - <span>Full Stack MERN App</span></li>
+                    <li>
+                      View Online -
+                      <span
+                        ><a
+                          href="https://github.com/Mithun20522/MERN-Blog-Website.git"
+                          target="_blank"
+                          >Click here to view</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+              <!-- Project - 2 -->
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumbnail">
+                  <img src="assets/img/ball_blaster.jpeg" alt="project image" />
+                </div>
+                <h3 class="portfolio-item-title">Ball Blaster - GAME</h3>
+                <button type="button" class="btn view-project-btn">
+                  view project
+                </button>
+                <div class="portfolio-item-details">
+                  <div class="description">
+                    <p>
+                      Immerse yourself in a delightful gaming experience with this interactive creation! 
+                      Crafted using the power of HTML, CSS, and Javascript, this game showcases the versatility of the Canvas library. 
+                      Engage in endless fun as you navigate through its simple yet captivating gameplay mechanics. 
+                      Let the magic unfold on your screen as you embark on this extraordinary journey!
+                    </p>
+                  </div>
+                  <div class="general-info">
+                    <ul>
+                      <li>technologies used - <span>Html, CSS, Javascript , Canvas , ChakraUI</span></li>
+                      <li>Role - <span>Frontend</span></li>
+                      <li>
+                        View Online -
+                        <span
+                          ><a
+                            href="https://mithun20522.github.io/Shooting-game-using-Canvas/"
+                            target="_blank"
+                            >Click here to view</a
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- Project - 3 -->
+              <div class="portfolio-item">
+                <div class="portfolio-item-thumbnail">
+                  <img src="assets/img/musicplayer.jpeg" alt="project image" />
+                </div>
+                <h3 class="portfolio-item-title">Music Player</h3>
+                <button type="button" class="btn view-project-btn">
+                  view project
+                </button>
+                <div class="portfolio-item-details">
+                  <div class="description">
+                    <p>
+                      Crafted a dynamic music player using ReactJS, integrated seamlessly with the Spotify API. 
+                      This project delivers a sleek and intuitive user interface for enjoying your favorite tunes.
+                       Dive into the world of seamless music exploration and playback.
+                    </p>
+                  </div>
+                  <div class="general-info">
+                    <ul>
+                      <li>technologies used - <span>Html-CSS, Application Programming Interfaces (API) , Bootstrap (Framework), JavaScript ,  React.js , Git</span></li>
+                      <li>Role - <span>Full stack</span></li>
+                      <li>
+                        View Online -
+                        <span
+                          ><a
+                            href="https://mithun20522.github.io/MV-Music/"
+                            target="_blank"
+                            >Click here to view</a
+                          ></span
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project - 4 -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="assets/img/landingpage.png" alt="project image" />
+              </div>
+              <h3 class="portfolio-item-title">Modern Responsive Landing Page </h3>
+              <button type="button" class="btn view-project-btn">
+                view project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Indulge your senses in the aroma of innovation with our responsive coffee website landing page.
+                    Meticulously crafted using ReactJS and adorned with the stylish touch of Tailwind CSS, it's a modern marvel that invites you to explore the world of coffee in a visually captivating and user-friendly space.
+                    Immerse yourself in a seamless blend of technology and design – where every scroll unveils the rich essence of a new coffee experience.
+                    Welcome to a digital coffee haven, where flavor meets functionality.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>technologies used - <span>Html-CSS, TailwindCSS, Javascript , ReactJS</span></li>
+                    <li>Role - <span>Frontend</span></li>
+                    <li>
+                      View Online -
+                      <span
+                        ><a
+                          href="https://mithun20522.github.io/Landing-Page/"
+                          target="_blank"
+                          >Click here to view</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project - 5 -->
+            <div class="portfolio-item">
+              <div class="portfolio-item-thumbnail">
+                <img src="assets/img/foodordering.avif" alt="project image" />
+              </div>
+              <h3 class="portfolio-item-title">Food Ordering App</h3>
+              <button type="button" class="btn view-project-btn">
+                view project
+              </button>
+              <div class="portfolio-item-details">
+                <div class="description">
+                  <p>
+                    Developed an Android food ordering app that allows users and vendors to register and log in. 
+                    The app offers various features for vendors, such as adding and updating menus, checking orders, and viewing payment history. 
+                    Similarly, customers can view their order status, apply filters to order meals, choose suitable payment options, cancel orders, chat with the chatbot, and receive updates on WhatsApp.
+                  </p>
+                </div>
+                <div class="general-info">
+                  <ul>
+                    <li>technologies used - <span>Html-CSS, TailwindCSS, Javascript , ReactJS , Redux and Redux-Toolkit, NodeJS, MongoDB, ExpressJS, Firebase </span></li>
+                    <li>Role - <span>Full stack android app</span></li>
+                    <li>
+                      View Online -
+                      <span
+                        ><a
+                          href="https://github.com/aditya-2407/Canteen_App_Project"
+                          target="_blank"
+                          >Click here to view</a
+                        ></span
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio Item End -->
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio Section End -->
+
+      <!-- Contact Start Section -->
+      <section class="contact-section sec-padding" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section-title">
+              <h2>contact me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contact-form">
+                <div class="row">
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      id="userName"
+                      name="name"
+                      class="input-control"
+                    />
+                  </div>
+
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      placeholder="Your Email"
+                      id="userEmail"
+                      name="email"
+                      class="input-control"
+                    />
+                  </div>
+
+                  <div class="input-group">
+                    <textarea
+                      placeholder="Message"
+                      class="input-control"
+                      id="userMessage"
+                      name="message"
+                    ></textarea>
+                  </div>
+
+                  <div class="submit-button">
+                    <button class="btn" id="submitBtn">send message</button>
+                  </div>
+                </div>
+            </div>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <h3>Email</h3>
+                <p>mithunverma5895@gmail.com</p>
+              </div>
+
+              <div class="contact-info-item">
+                <h3>Phone</h3>
+                <p>+91 95 **** ****</p>
+              </div>
+
+              <div class="contact-info-item">
+                <h3>follow me</h3>
+                <div class="social-links">
+                  <a
+                    href="https://www.linkedin.com/in/mithun-verma-045801257/"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                  <a href="https://github.com/Mithun20522" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a href="https://instagram.com/mithunverma01" target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact End Section -->
+    </div>
+    <!-- Main End -->
+    <!-- Portfolio Item Details Popup Start -->
+    <div class="portfolio-popup">
+      <div class="pp-inner">
+        <div class="pp-content">
+          <div class="pp-header">
+            <button class="btn pp-close" type="button">
+              <i class="fa fa-close"></i>
+            </button>
+            <div class="pp-thumbnail">
+              <img src="" alt="" />
+            </div>
+            <h3></h3>
+          </div>
+          <div class="pp-body"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Item Details Popup End -->
+    <script src="index.js"></script>
+  </body>
+</html>
