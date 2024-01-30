@@ -125,6 +125,10 @@ function sendMail(){
   const userName = document.getElementById('userName');
   const userEmail = document.getElementById('userEmail');
   const userMessage = document.getElementById('userMessage');
+  if( userName.value === "" || userEmail.value === "" || userMessage.value === ""){
+    alert('All fields are mandatory!');
+    return;
+  }
   const templateParams = {
     userName: userName.value,
     userEmail:userEmail.value,
@@ -133,10 +137,14 @@ function sendMail(){
 
   emailjs.send('service_bmjlncn', 'template_17xeoah', templateParams)
   .then(function(response) {
-     console.log('SUCCESS!', response.status, response.text);
+     alert('Message Sent!', response.status, response.text);
   }, function(error) {
      console.log('FAILED...', error);
   });
+
+  userName.value = "";
+  userEmail.value = "";
+  userMessage.value = "";
 
 }
 const btn = document.getElementById('submitBtn');
