@@ -125,6 +125,7 @@ function sendMail(){
   const userName = document.getElementById('userName');
   const userEmail = document.getElementById('userEmail');
   const userMessage = document.getElementById('userMessage');
+  const loadingSpinner = document.getElementById('loadingSpinner');
   if( userName.value === "" || userEmail.value === "" || userMessage.value === ""){
     alert('All fields are mandatory!');
     return;
