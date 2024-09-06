@@ -118,36 +118,38 @@ function portfolioItemsDetails(portfolioItem) {
   ).innerHTML;
 }
 
-
-
 // contact me functionality
-function sendMail(){
-  const userName = document.getElementById('userName');
-  const userEmail = document.getElementById('userEmail');
-  const userMessage = document.getElementById('userMessage');
-  const loadingSpinner = document.getElementById('loadingSpinner');
-  if( userName.value === "" || userEmail.value === "" || userMessage.value === ""){
-    alert('All fields are mandatory!');
+function sendMail() {
+  const userName = document.getElementById("userName");
+  const userEmail = document.getElementById("userEmail");
+  const userMessage = document.getElementById("userMessage");
+  const loadingSpinner = document.getElementById("loadingSpinner");
+  if (
+    userName.value === "" ||
+    userEmail.value === "" ||
+    userMessage.value === ""
+  ) {
+    alert("All fields are mandatory!");
     return;
   }
   const templateParams = {
     userName: userName.value,
-    userEmail:userEmail.value,
-    userMessage:userMessage.value
+    userEmail: userEmail.value,
+    userMessage: userMessage.value,
   };
 
-  emailjs.send('service_bmjlncn', 'template_17xeoah', templateParams)
-  .then(function(response) {
-     alert('Message Sent!', response.status, response.text);
-  }, function(error) {
-     console.log('FAILED...', error);
-  });
+  emailjs.send("service_bmjlncn", "template_17xeoah", templateParams).then(
+    function (response) {
+      alert("Message Sent!", response.status, response.text);
+    },
+    function (error) {
+      console.log("FAILED...", error);
+    }
+  );
 
   userName.value = "";
   userEmail.value = "";
   userMessage.value = "";
-
 }
-const btn = document.getElementById('submitBtn');
-btn.addEventListener('click', sendMail);
-
+const btn = document.getElementById("submitBtn");
+btn.addEventListener("click", sendMail);
